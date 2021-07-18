@@ -6,16 +6,12 @@ class Tag extends Model {}
 
 Tag.init(
   {
-    id : {
-
+    id:{
+      type: DataTypes.INTEGERS,
     },
-    product_id : {
-
+    tag_name:{
+      type: DataTypes.INTEGERS,
     },
-    tag_id : {
-      
-    }
-
   },
   {
     sequelize,
