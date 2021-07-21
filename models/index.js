@@ -20,9 +20,9 @@ Product.belongsToMany(Tag, {
    through: {
      model: ProductTag,
      uniqe: false
-   }, as: 'product_tag'   });
+   }, as: 'product_tags'   });
 // Tags belongToMany Products (through ProductTag)
-Tag.belongToMany(Product, {
+Tag.belongsToMany(Product, {
   through: {
     model: ProductTag,
     uniqe: false
